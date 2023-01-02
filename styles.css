@@ -1,0 +1,17 @@
+.card {
+    background-color: aquamarine;
+    height: 70px;
+    border: solid black 2px;
+    margin: 15px;
+}
+
+#bookInfo {
+
+    width: 50vw;
+    max-width: 500px;
+
+}
+
+label {
+    display: block;
+}

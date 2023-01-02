@@ -23,9 +23,12 @@ function createBookObject(name, author, read){
   book = new Book(name, author, read);
 }
 
-const main = document.querySelector(".main");
+
 const newBookButton = document.querySelector(".newBook");
 const cards = document.querySelector(".cards");
+const form = document.querySelector("#bookInfo");
+const popup = document.querySelector(".popup");
+
 
 
 /*
@@ -52,6 +55,9 @@ newBookButton.addEventListener("click", ()=>{
 */
 // addBookToLibrary();
 // myLibrary.push(book);
+
+
+
 
 // Loop Array, Create Card with array element
 function arrayLoop(){
@@ -84,8 +90,12 @@ submit.addEventListener("click", (event)=>{
   cards.textContent = "";
   arrayLoop();
   document.querySelector("#bookInfo").reset();
+  popup.classList.remove("active");
 
 });
 
+newBookButton.addEventListener("click", ()=> {
+    popup.classList.add("active");
 
+})
 

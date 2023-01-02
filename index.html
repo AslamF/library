@@ -12,37 +12,52 @@
 
 <body>
 
-    <div class="main">
+    <div class="header">
+        Library
 
+    </div>
+
+
+    <div class="body">
         <button class="newBook">NEW BOOK</button>
         <div class="cards">
 
         </div>
 
+        <div class="popup">
+            <form method="get" id="bookInfo">
 
+                <h2>New Book</h2>
+                <div class="formElement">
+                    <label for="title"></label>
+                    <input type="text" name="title" id="title" placeholder="Title" required>
+                </div>
 
+                <div class="formElement">
+                    <label for="author"></label>
+                    <input type="text" name="author" id="author" placeholder="Author" required>
+                </div>
 
-        <form method="get" id="bookInfo">
+                <div class="formElement">
+                    <label for="pages"></label>
+                    <input type="number" name="pages" id="pages" placeholder="Pages">
+                </div>
 
-            <legend>NEW BOOK</legend>
+                <div class="formElement">
+                    <label for="read">READ?<input type="checkbox" id="read" required></label>
+                </div>
 
-            <label for="title"></label>
-            <input type="text" name="title" id="title" placeholder="Title" required>
-
-            <label for="author"></label>
-            <input type="text" name="author" id="author" placeholder="Author" required>
-
-            <label for="pages"></label>
-            <input type="number" name="pages" id="pages" placeholder="Pages">
-
-            <label for="read">READ?<input type="checkbox" id="read" required></label>
-
-
-            <input type="submit" value="Submit" id="submit">
-
-        </form>
+                <div class="formElement">
+                    <input type="submit" value="Submit" id="submit">
+                </div>
+            </form>
+        </div>
 
     </div>
+    <div class="footer">
+
+    </div>
+
 
 </body>
 

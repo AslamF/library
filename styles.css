@@ -1,3 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header,
+.footer {
+    width: 100%vw;
+    height: 100px;
+    background-color: aqua;
+}
+
+.body {
+    flex: 1;
+}
+
+
 .card {
     background-color: aquamarine;
     height: 70px;
@@ -5,13 +29,61 @@
     margin: 15px;
 }
 
-#bookInfo {
 
-    width: 50vw;
-    max-width: 500px;
 
+.popup {
+    background-color: aqua;
+    position: absolute;
+    top: -150%;
+    opacity: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 380px;
+    padding: 20px 30px;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 2000ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 20ms ease-in-out 0ms;
 }
 
-label {
+.popup.active {
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.25);
+    transition: top 0ms ease-in-out 0ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 20ms ease-in-out 0ms;
+}
+
+.popup #bookInfo h2 {
+    text-align: center;
+}
+
+.formElement {
+    margin: 15px 0px;
+}
+
+input[type="text"],
+input[type="number"] {
     display: block;
+    margin-top: 5px;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+input[type="checkbox"] {
+    margin-left: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 10px;
 }

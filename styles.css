@@ -8,6 +8,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+
 }
 
 .header,
@@ -19,6 +20,7 @@ body {
 
 .body {
     flex: 1;
+    text-align: center;
 }
 
 
@@ -85,5 +87,35 @@ input[type="submit"] {
     border: none;
     outline: none;
     font-size: 16px;
+    border-radius: 10px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+    padding: 20px;
+
+}
+
+.newCard {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    gap: 40px;
+    padding: 40px;
+    background-color: beige;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.newBook {
+    margin-top: 50px;
+    padding: 5px;
+    width: 150px;
+    height: 35px;
+    border: none;
     border-radius: 10px;
 }

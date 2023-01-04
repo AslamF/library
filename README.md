@@ -23,3 +23,6 @@ http://theodinproject.com
 - HTML
 - CSS
 - JAVASCRIPT
+
+## Issues
+    Still need to add logic for read button, form validation, and minor bugs in the form. 

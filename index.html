@@ -23,35 +23,38 @@
         <div class="cards">
 
         </div>
-        <div class="popup">
-            <form method="get" id="bookInfo">
+        <div class="popupWrapper">
+            <div class="popup">
+                <form method="get" id="bookInfo">
 
-                <h2>New Book</h2>
-                <div class="formElement">
-                    <label for="title"></label>
-                    <input type="text" name="title" id="title" placeholder="Title" required>
-                </div>
+                    <h2>New Book</h2>
+                    <div class="formElement">
+                        <label for="title"></label>
+                        <input type="text" name="title" id="title" placeholder="Title" required>
+                    </div>
 
-                <div class="formElement">
-                    <label for="author"></label>
-                    <input type="text" name="author" id="author" placeholder="Author" required>
-                </div>
+                    <div class="formElement">
+                        <label for="author"></label>
+                        <input type="text" name="author" id="author" placeholder="Author" required>
+                    </div>
 
-                <div class="formElement">
-                    <label for="pages"></label>
-                    <input type="number" name="pages" id="pages" placeholder="Pages">
-                </div>
+                    <div class="formElement">
+                        <label for="pages"></label>
+                        <input type="number" name="pages" id="pages" placeholder="Pages" required>
+                    </div>
 
-                <div class="formElement">
-                    <label for="read">READ?<input type="checkbox" id="read" required></label>
-                </div>
+                    <div class="formElement">
+                        <label for="read">READ?<input type="checkbox" id="read"></label>
+                    </div>
 
-                <div class="formElement">
-                    <input type="submit" value="Submit" id="submit">
-                </div>
-            </form>
+                    <div class="formElement group">
+                        <input type="button" value="CANCEL" id="cancel">
+                        <input type="submit" value="SUBMIT" id="submit">
+
+                    </div>
+                </form>
+            </div>
         </div>
-
     </div>
     <div class="footer">
 
